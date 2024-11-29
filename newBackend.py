@@ -20,7 +20,7 @@ db = SQLAlchemy(app)
 logging.basicConfig(level=logging.DEBUG)
 
 # YOLO Model
-model = YOLO('train6/weights/best.pt')
+model = YOLO('./best.pt')
 
 # File Model
 class File(db.Model):
