@@ -12,7 +12,7 @@ app.config['DEBUG'] = True
 CORS(app)
 
 # Database Configuration (Render will automatically set the DATABASE_URL env var)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')  # Render sets this
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://dronesql_user:bUbTSuAGpQOKlgXLvAnvOyoZXCknelRh@dpg-ct4kojbtq21c73943grg-a/dronesql'  # Render sets this
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
